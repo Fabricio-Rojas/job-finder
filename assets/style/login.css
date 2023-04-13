@@ -1,0 +1,111 @@
+@import "./reset.css";
+
+/* Body and Main elements */
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* Main */
+main {
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Image Banner */
+.img-banner {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    float: left;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.logo h3 {
+    line-height: 60px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: #00a4ea;
+}
+
+/* Login Section */
+.login {
+    background-color: #fff;
+    margin: auto 0;
+    padding: 20px;
+}
+
+.login h2 {
+    color: #00a4ea;
+}
+
+.login p {
+    color: #00000080;
+    font-size: 15px;
+    margin: 5px 0 10px;
+}
+
+.login input[type=text] {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 0 10px;
+    background-color: #c3edffb8;
+}
+
+.login a {
+    font-size: 12px;
+    color: #39B6EA;
+}
+
+.button-row {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button-row button {
+    height: 45px;
+    width: 100px;
+    margin: 0 15px;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #39B6EA;
+}
+
+.button-row button:nth-child(2) {
+    color: #39B6EA;
+    background-color: #fff;
+    border: 2px solid #39B6EA;
+}
+
+.login ul {
+    display: flex;
+    float: left;
+}
+
+.login li {
+    font-size: 12px;
+    margin-right: 10px;
+}
