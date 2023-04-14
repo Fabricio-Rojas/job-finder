@@ -8,33 +8,51 @@ const fileName = document.querySelector('#file-name');
 const postBtn = document.querySelector('#post-btn');
 const grid = document.querySelector('.grid');
 
-
+const contactRows = document.querySelector('.contact-rows');
 
 /*----------------------- Main Functions -----------------------*/
 
+const apiUrl = 'https://randomuser.me/api/?nat=CA&results=10';
+const options = {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json; charset=UTF-8'
+    },
+    mode: 'cors'
+};
+
+async function getUsers() {
+    try {
+        const response = await fetch(apiUrl, options);
+        if (!response.ok) {
+            console.log(`${response.statusText}: ${response.status} error`);
+        }
+        const data = await response.json();
+        for (let i = 0; i < data.results.length; i++) {
+            let fullName = `${data.results[i].name.first} ${data.results[i].name.last}`;
+            let cityLocation = `${data.results[i].location.city}, ${data.results[i].location.country}`;
+            let picIcon = data.results[i].picture.large;
+
+            createUserDivs(fullName, cityLocation, picIcon);
+        }
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+
+function createUserDivs(name, city, pic) {
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('contact');
+    newDiv.innerHTML = `<img src="${pic}" alt="icon"><div><h4>${name}</h4><p>${city}</p>`;
+    contactRows.appendChild(newDiv);
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+getUsers();
 
 // Posting functions
 postFile.addEventListener('input', function() {

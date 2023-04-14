@@ -167,6 +167,7 @@ header {
     font-size: 18px;
     color: #00a4ea;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Post input area */
@@ -237,13 +238,30 @@ header {
     height: fit-content;
     border-radius: 5px;
     background-color: #fff;
-    padding: 0 0 20px;
 }
 
 .contacts h2 {
     text-align: center;
     line-height: 90px;
     border-bottom: 5px solid #f1f2f3;
+}
+
+.contact-rows {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.contact {
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 5px solid #f1f2f3;
+}
+
+.contact img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
 }
 
 /* Posts area */
