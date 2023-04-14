@@ -73,6 +73,10 @@ main {
     background-color: #c3edffb8;
 }
 
+#error-text {
+    color: #ff0000;
+}
+
 .login a {
     font-size: 12px;
     color: #39B6EA;
@@ -92,6 +96,15 @@ main {
     color: #fff;
     font-weight: bold;
     background-color: #39B6EA;
+    cursor: pointer;
+}
+
+.button-row button:nth-child(1):hover {
+    background-color: #75c8ff;
+}
+
+.button-row button:nth-child(1):active {
+    background-color: #1D9BF0;
 }
 
 .button-row button:nth-child(2) {

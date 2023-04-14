@@ -7,46 +7,110 @@
         <meta name="description" content="___">
         <meta name="keywords" content="html, css, web, web development, seo">
         <title>Job Share</title>
-        <link rel="shortcut icon" href="./assets/image/main white finished.png?v=2" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="shortcut icon" href="./assets/image/logo.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="./assets/style/home.css" media="all">
         <script src="./assets/script/home.js" defer></script>
     </head>
     <body>
         <header>
             <div class="container heading">
-                <h2>Twatter</h2>
+                <div class="logo">
+                    <img src="./assets/image/logo.png" alt="logo">
+                    <h3>Job Share</h3>
+                </div>
+                <div class="search-bar">
+                    <input type="text" name="search" id="search-inp">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Friends</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Groups</a></li>
-                        <li><a href="#">My ads</a></li>
-                        <li><a href="#">Settings</a></li>
+                        <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                        <li><i class="fa-solid fa-user-group"></i><a href="#">Network</a></li>
+                        <li><i class="fa-solid fa-comment"></i><a href="#">Messaging</a></li>
+                        <li><i class="fa-solid fa-bell"></i><a href="#">Notifications</a></li>
+                        <li><i class="fa-solid fa-suitcase"></i><a href="#">Jobs</a></li>
                     </ul>
                 </nav>
-                <div class="user-icon" tabindex="0">
+                <div class="user-icon">
                     <img src="./assets/image/main white finished.png" alt="user icon">
-                    <div class="dropdown">
-                        
-                    </div>
                 </div>
             </div>
         </header>
         <main>
-            <div class="container">
-                <div class="inputs">
-                    <textarea name="post" id="post-txt" rows="5" placeholder="What's New?"></textarea>
-                    <div class="bottom-bar">
-                        <label for="post-file" class="post-file"><i class="fa-solid fa-image"></i><span id="file-name"></span></label>
-                        <input type="file" name="post" id="post-file" accept="image/png, image/jpeg">
-                        <button id="post-btn">Post</button>
+            <div class="container socials-grid">
+                <div class="profile">
+                    <img src="./assets/image/main white finished.png" alt="icon">
+                    <h2>Fabricio Rojas</h2>
+                    <p>Software Developer</p>
+                    <div class="stats-row">
+                        <div>
+                            <h4>767</h4>
+                            <p>Connections</p>
+                        </div>
+                        <div>
+                            <h4>60</h4>
+                            <p>Views</p>
+                        </div>
                     </div>
+                    <p>Boost your presence</p>
+                    <button id="premium-btn">UPGRADE TO PREMIUM</button>
                 </div>
-                <section class="grid">
-                    
-                </section>
+                <div class="mid-column">
+                    <div class="inputs">
+                        <textarea name="post" id="post-txt" rows="3" placeholder="What's New?"></textarea>
+                        <div class="bottom-bar">
+                            <label for="post-file" class="post-file"><i class="fa-solid fa-image"></i><span id="file-name"></span></label>
+                            <input type="file" name="post" id="post-file" accept="image/png, image/jpeg">
+                            <button id="post-btn">Post</button>
+                        </div>
+                    </div>
+                    <section class="grid">
+                        
+                    </section>
+                </div>
+                <div class="contacts">
+                    <h2>People you may know</h2>
+                </div>
             </div>
         </main>
+        <footer>
+            <section class="container">
+                <h3>Job Share</h3>
+                <nav>
+                    <ul>
+                        <li>Dashboard</li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Settings</a></li>   
+                    </ul>
+                    <ul>
+                        <li>Projects</li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>   
+                    </ul>
+                    <ul>
+                        <li>Business</li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Get started</a></li>   
+                    </ul>
+                    <ul>
+                        <li>Services</li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">App Design</a></li>
+                        <li><a href="#">Deployment</a></li>   
+                    </ul>
+                </nav>
+                <div class="bottom-bar">
+                    <p>Copyright &copy; 2023 All rights reserved</p>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </body>
 </html>
